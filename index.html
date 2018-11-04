@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>JustSport</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="styles/styleindex.css">
+		<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+		<link rel="icon" type="img/png" href="images/logoimg.png">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+  		AOS.init({
+			}
+			);
+		</script>
+	</head>
+
+	<body>
+		<!--Header of the document -->
+		<header>
+		</header>
+		<!--Navigation bar-->
+			<nav >
+				<div class="logomedia" >
+					<ul>
+						<li>
+							<table>
+								<tr>
+									<td class="logo">
+										<div class="outside">
+											<img src="images/logoimg.png" alt="logoimg" style="width:20%" >
+											<img src="images/logoname.png" alt="logotext" style="width:50%">
+										</div>
+										<div class="inside">
+											<img src="images/slogan.png" alt="slogan" style="width:50%" id="slogan">
+										</div>
+									</td>
+									<td class="media">
+											<a class="btn" href="https://www.facebook.com/" target="_blank">
+												<i class="fab fa-facebook-f"></i>
+											</a>
+											<a class="btn" href="#">
+												<i class="fab fa-twitter"></i>
+											</a>
+											<a class="btn" href="#">
+												<i class="fab fa-google"></i>
+											</a>
+											<a class="btn" href="#">
+												<i class="fab fa-instagram"></i>
+											</a>
+											<a class="btn" href="#">
+												<i class="fab fa-youtube"></i>
+											</a>
+									</td>
+								<tr>
+							</table>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+			<nav id="navpages" class="navpages" style="position:sticky;top:11.2%;overflow: hidden;">
+				<ul>
+					<div id="but" class="but">
+						<li>
+								<button class="dropbtn" onclick="myFunctionMenu(this)">
+									<div id="bar1" class="bar1"></div>
+									<div id="bar2"class="bar2"></div>
+									<div id="bar3" class="bar3"></div>
+								</button>
+						</li>
+					</div>
+					<div id="myMenu" class="menu">
+						<li> <a href="index.html">Index</a> </li>
+						<li> <a href="html/men.html">Men</a> </li>
+						<li> <a href="html/contact.html">Contact!</a> </li>
+						<li> <a href="html/women.html">Women</a> </li>
+						<li> <a href="#">Page5</a> </li>
+					</div>
+				</ul>
+			</nav>
+
+
+			<script>
+				function myFunction(x) {
+					x.classList.toggle("change");
+				}
+
+				function wait(){
+					document.getElementById("navpages").style.background = "none";
+					document.getElementById("myMenu").style.display = "none";
+				}
+
+				function barblack(){
+					document.getElementById("bar1").style.background= "#333";
+					document.getElementById("bar2").style.background= "#333";
+					document.getElementById("bar3").style.background= "#333";
+				}
+
+				function barwhite(){
+					document.getElementById("bar1").style.background= "white";
+					document.getElementById("bar2").style.background= "white";
+					document.getElementById("bar3").style.background= "white";
+				}
+				function myFunctionMenu(x){
+					if (document.getElementById("myMenu").style.display == "inline"){
+						document.getElementById("navpages").style.animation = "animationnavout 1s ease";
+						document.getElementById("navpages").className = "navpagesclick";
+						document.getElementById("but").style.animation = "none";
+						setTimeout(wait,800);
+						barblack();
+						myFunction(x);
+					}
+					else {
+						document.getElementById("myMenu").style.display = "inline";
+						document.getElementById("navpages").className = "navpagesclick";
+						document.getElementById("navpages").style.animation = "animationnavin 1s ease";
+						document.getElementById("navpages").style.background = "linear-gradient(to right, #2a2460 0%, #aa4690 100%)";
+						document.getElementById("but").style.animation = "none";
+						myFunction(x)
+						barwhite();
+					}
+				}
+
+			</script>
+
+		<!--Section of the document -->
+		<section style="border: 0">
+			<div class="container">
+					<img src="images/bike.png" alt="basket" >
+					<img src="images/run.png" alt="run" >
+					<img src="images/sailing.png" alt="sailing">
+					<img src="images/ski.png" alt="ski" >
+			</div>
+		</section>
+		<section id="products" class="products" style="height:90vh;overflow:hidden">
+			<h1 data-aos="fade-right" data-aos-duration="3000" data-aos-easing="ease">JUSTFIT</h2>
+			<p data-aos="zoom-out" data-aos-duration="3000" data-aos-easing="ease">SELLING THE BEST PRODUCTS FOR YOU</p>
+			<table>  <!-- 2 cols 2 rows-->
+				<tr>
+					<td>
+						<p data-aos="fade-right" data-aos-duration="3000" data-aos-delay="300" data-aos-easing="ease">BEST SELLER</p>
+					</td>
+
+					<td>
+						<img data-aos="fade-left" data-aos-duration="3000" data-aos-delay="300" data-aos-easing="ease"src="#" alt="bestseller">
+					</td>
+				</tr>
+					<td>
+						<img data-aos="fade-right" data-aos-duration="3000" data-aos-delay="300" data-aos-easing="ease" src="#" alt="latestprod">
+					</td>
+					<td>
+						<p data-aos="fade-left" data-aos-duration="3000" data-aos-delay="300" data-aos-easing="ease">LATEST PRODUCTS</p>
+					</td>
+				<tr>
+				</tr>
+			</table>
+
+		</section>
+
+		<!--Aside information-->
+		<aside>
+			<a id="arrowdwn" href="#products" onclick="scrollbotttom()" >
+				<i  class="fas fa-arrow-circle-down"></i>
+			</a>
+
+		</aside>
+		<!--Foot of the document-->
+		<footer>
+			&#169; JustFit 2018   By Rodrigo Alonso<a href="#" target:"_blank"> About us</a> <a href="#" target:"_blank">Contact!</a>
+		</footer>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	  <script>
+	    AOS.init();
+	  </script>
+	</body>
+</html>

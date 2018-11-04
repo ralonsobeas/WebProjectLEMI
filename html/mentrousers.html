@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>Shop</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="../styles/men.css">
+		<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+		<link rel="icon" type="img/png" href="../images/logoimg.png">
+	</head>
+
+	<body>
+		<!--Header of the document -->
+		<header>
+		</header>
+		<!--Navigation bar-->
+		<nav>
+			<div class="logomedia">
+				<ul>
+					<li>
+						<table>
+							<tr>
+								<td class="logo">
+									<div class="outside">
+										<img src="../images/logoimg.png" alt="logoimg" style="width:20%" >
+										<img src="../images/logoname.png" alt="logotext" style="width:50%">
+									</div>
+									<div class="inside">
+										<img src="../images/slogan.png" alt="slogan" style="width:50%" id="slogan">
+									</div>
+								</td>
+								<td class="media">
+										<a class="btn" href="#">
+											<i class="fab fa-facebook-f"></i>
+										</a>
+										<a class="btn" href="#">
+											<i class="fab fa-twitter"></i>
+										</a>
+										<a class="btn" href="#">
+											<i class="fab fa-google"></i>
+										</a>
+										<a class="btn" href="#">
+											<i class="fab fa-instagram"></i>
+										</a>
+										<a class="btn" href="#">
+											<i class="fab fa-youtube"></i>
+										</a>
+								</td>
+							<tr>
+						</table>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<nav id="navpages" class="navpages" style="position:sticky;top:11.2%">
+			<ul>
+				<div id="but" class="but">
+					<li>
+							<button class="dropbtn" onclick="myFunctionMenu(this)">
+								<div id="bar1" class="bar1"></div>
+								<div id="bar2"class="bar2"></div>
+								<div id="bar3" class="bar3"></div>
+							</button>
+					</li>
+				</div>
+				<div id="myMenu" class="menu">
+					<li> <a href="../index.html">Index</a> </li>
+					<li> <a href="../Page1.html">Page2</a> </li>
+					<li> <a href="#">Page3</a> </li>
+					<li> <a href="#">Page4</a> </li>
+					<li> <a href="#">Page5</a> </li>
+				</div>
+			</ul>
+		</nav>
+
+
+		<script>
+			function myFunction(x) {
+				x.classList.toggle("change");
+			}
+
+			function wait(){
+				document.getElementById("navpages").style.background = "none";
+				document.getElementById("myMenu").style.display = "none";
+			}
+
+			function barblack(){
+				document.getElementById("bar1").style.background= "#333";
+				document.getElementById("bar2").style.background= "#333";
+				document.getElementById("bar3").style.background= "#333";
+			}
+
+			function barwhite(){
+				document.getElementById("bar1").style.background= "white";
+				document.getElementById("bar2").style.background= "white";
+				document.getElementById("bar3").style.background= "white";
+			}
+			function myFunctionMenu(x){
+				if (document.getElementById("myMenu").style.display == "inline"){
+					document.getElementById("navpages").style.animation = "animationnavout 1s ease";
+					document.getElementById("navpages").className = "navpagesclick";
+					document.getElementById("but").style.animation = "none";
+					setTimeout(wait,800);
+					barblack();
+					myFunction(x);
+				}
+				else {
+					document.getElementById("myMenu").style.display = "inline";
+					document.getElementById("navpages").className = "navpagesclick";
+					document.getElementById("navpages").style.animation = "animationnavin 1s ease";
+					document.getElementById("navpages").style.background = "linear-gradient(to right, #2a2460 0%, #aa4690 100%)";
+					document.getElementById("but").style.animation = "none";
+					myFunction(x)
+					barwhite();
+				}
+			}
+
+		</script>
+
+		<!--Section of the document -->
+
+		<section>
+			<div style="text-align:center">
+				<h1> Men Trousers</h1>
+			</div>
+
+		</section>
+		<section>
+			<!-- 2 cols 1 row -->
+			<table>
+				<tr>
+					<td id="tshirt">
+						<a href="#" >
+							<img src="../images/mentshirt.jpg" alt="mentshirt" style="height:50vh;width:65vh">
+							<p id="imgtxt" style="position:absolute;top:60%;left:22%;overflow:hidden;">T-shirts</p>
+						</a>
+					</td>
+					<td id="trousers">
+						<a href="#" >
+							<img src="../images/mentrousers.jpg" alt="menttrouserd" style="height:50vh;width:50vh">
+							<p id="imgtxt" style="position:absolute;top:60%;left:72%;overflow:hidden">Trousers</p>
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td id="tshirt">
+						<a href="#" >
+							<img src="../images/mentshirt.jpg" alt="mentshirt" style="height:50vh;width:65vh">
+							<p id="imgtxt" style="position:absolute;top:60%;left:22%;overflow:hidden;">T-shirts</p>
+						</a>
+					</td>
+					<td id="trousers">
+						<a href="#" >
+							<img src="../images/mentrousers.jpg" alt="menttrouserd" style="height:50vh;width:50vh">
+							<p id="imgtxt" style="position:absolute;top:60%;left:72%;overflow:hidden">Trousers</p>
+						</a>
+					</td>
+				</tr>
+
+			</table>
+		</section>
+
+		<!--Aside information-->
+		<aside>
+		</aside>
+		<!--Foot of the document-->
+		<footer>
+			&#169; JustFit 2018   By Rodrigo Alonso<a href="#" target:"_blank"> About us</a> <a href="#" target:"_blank">Contact!</a>
+		</footer>
+	</body>
+</html>
