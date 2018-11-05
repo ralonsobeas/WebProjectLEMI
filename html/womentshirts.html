@@ -92,13 +92,13 @@
 		<header>
 		</header>
 		<!--Navigation bar-->
-		<nav>
-			<div class="logomedia">
+		<nav class="logomedia">
+			<div >
 				<ul>
 					<li>
 						<table>
 							<tr>
-								<td class="logo">
+								<td class="logo" style="display:inline">
 									<div class="outside">
 										<img src="../images/logoimg.png" alt="logoimg" style="width:20%" >
 										<img src="../images/logoname.png" alt="logotext" style="width:50%">
@@ -106,6 +106,12 @@
 									<div class="inside">
 										<img src="../images/slogan.png" alt="slogan" style="width:50%" id="slogan">
 									</div>
+								</td>
+								
+								<td>
+									<button class="btn" onclick="appearcart()">
+										<i class="fas fa-shopping-cart"></i>
+									</button>
 								</td>
 								<td class="media">
 										<a class="btn" href="#">
@@ -131,7 +137,7 @@
 			</div>
 		</nav>
 
-		<nav id="navpages" class="navpages" style="position:sticky;top:11.2%">
+		<nav id="navpages" class="navpages" >
 			<ul>
 				<div id="but" class="but">
 					<li>
@@ -139,11 +145,6 @@
 								<div id="bar1" class="bar1"></div>
 								<div id="bar2"class="bar2"></div>
 								<div id="bar3" class="bar3"></div>
-							</button>
-					</li>
-					<li>
-							<button class="cart" onclick="appearcart()">
-								Cart
 							</button>
 					</li>
 				</div>
@@ -159,7 +160,7 @@
 		<div id="idsubmenucart"  class="submenucart" >
 		<table >
 				<tr >
-						<td  class="shoppingcart-container"><div style="width:100%;display:inline-block;overflow:auto" class="simpleCart_items"></div></td>
+						<td  class="shoppingcart-container" ><div class="simpleCart_items"></div></td>
 				</tr>
 				<tr>
 						<td  align="center">

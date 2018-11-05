@@ -8,23 +8,26 @@
 
 body{
 	font-family: BebasNeuer;
-	background-color:#85144b
-;
+	background-color:#85144b;
 	background-position: right;
 	z-index:-1;
 	background-attachment: fixed;
 	margin:inherit;
 }
 
-nav{
+
+.logomedia{
 	position: sticky;
 	top:0;
 	z-index:1;
+	height:13%;
 }
+
+
 
 .logomedia ul {
 	list-style-type: none;
-	height:10%;
+	height:15%;
 	margin: 0;
 	padding: 0;
 	background-color: #E1E1E1;
@@ -81,6 +84,11 @@ nav{
 	color: #aa4690;
 	overflow: hidden;
 	position: relative;
+	cursor:pointer;
+}
+
+.btn button{
+	margin:10px;
 }
 
 .btn i{
@@ -130,8 +138,8 @@ nav{
 .but .dropbtn{
     display: inline;
     cursor: pointer;
-		background: none;
-		border: none;
+	background: none;
+	border: none;
 }
 
 .dropbtn:focus{
@@ -163,8 +171,8 @@ nav{
 
 .navpages{
 	background:none;
-	position:siticky;
-	top:13%;
+	position:sticky;
+	top:15%;
 }
 
 .navpages ul,.navpagesclick ul{
@@ -193,7 +201,7 @@ nav{
 	border-radius: 25px;
 	background:none;
 	position:sticky;
-	top:13%;
+	top:15%;
 }
 
 .menu{
@@ -204,12 +212,27 @@ nav{
 }
 
 .submenucart{
+	font-size:3vh;
 	display:none;
 	position:fixed;
 	background: #E1E1E1;
 	width: 30%;
 	height: 30%;
+	border-style: solid double;
+	overflow:scroll;
 }
+
+.cart{
+	bottom:30px;
+	background:none;
+	border:none;
+	cursor:pointer;
+}
+
+.submenucart a{
+	text-decoration:none;
+}
+
 
 .cart:hover .submenucart{
 	visibility: hidden;
