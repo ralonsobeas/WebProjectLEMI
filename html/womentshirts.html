@@ -107,9 +107,9 @@
 										<img src="../images/slogan.png" alt="slogan" style="width:50%" id="slogan">
 									</div>
 								</td>
-								
+
 								<td>
-									<button class="btn" onclick="appearcart()">
+									<button id="cart" class="btn" onclick="appearcart()">
 										<i class="fas fa-shopping-cart"></i>
 									</button>
 								</td>
@@ -219,7 +219,7 @@
 					barwhite();
 				}
 			}
-
+			document.getElementById("idsubmenucart").style.display = "none";
 			function appearcart(){
 				if(document.getElementById("idsubmenucart").style.display == "none"){
 					document.getElementById("idsubmenucart").style.display = "block";
@@ -241,48 +241,49 @@
 		</section>
 
 		<section>
-			<table>
+			<table >
             <tr>
-                <td>
+                <td style="border: solid;border-radius:5%;">
                     <div class="simpleCart_shelfItem">
-                        <h5 class="item_name">DUMMY PRODUCT 1</h5>
-                        <img src="images/num_1_m.gif" alt="DUMMY PRODUCT 1" title="DUMMY PRODUCT 1" class="item_image" style="z-index:-1;"/>
-                        <span class="item_price"><strong>R10.01</strong></span>
+                        <h2 class="item_name">Nike Medalist W</h2>
+                        <img src="../images/nikemedalist.jpg" alt="Nike Medalist" title="Nike Medalist" class="item_image" style="z-index:-1;"/>
+                        <br><span class="item_price"><strong>50 €</strong></span><br>
 						<noscript><a href="no_javascript.html" class="item_add">Add to Cart</a>;</noscript>
-						<script>document.write('<a href="#" class="item_add">Add to Cart</a>');</script>
-						<p class="item_Description">product description product description<br/>product description product description</p>
+						<script>document.write('<a href="javascript:void(0);" class="item_add">Add to Cart</a>');</script>
+						<p class="item_Description">Women's Short-Sleeve Running Top</p>
                     </div>
                 </td>
-                <td>
+                <td style="border: solid;border-radius:5%;">
                     <div class="simpleCart_shelfItem">
-                        <h5 class="item_name">DUMMY PRODUCT 2</h5>
-                        <img src="images/num_2_m.gif" alt="DUMMY PRODUCT 2" title="DUMMY PRODUCT 2" class="item_image" style="z-index:-1;"/>
-                        <span class="item_price"><strong>R20.02</strong></span>
+                        <h2 class="item_name">Nike Pro Warm W</h2>
+                        <img src="../images/nikeprowarmw.jpg" alt="Nike Pro Warm W" title="Nike Pro Warm W" class="item_image" style="z-index:-1;"/>
+                        <br><span class="item_price"><strong>70.00 €</strong></span><br>
 						<noscript><a href="no_javascript.html" class="item_add">Add to Cart</a>;</noscript>
-						<script>document.write('<a href="#" class="item_add">Add to Cart</a>');</script>
-						<p class="item_Description">product description product description<br/>product description product description</p>
+						<script>document.write('<a href="javascript:void(0);" class="item_add">Add to Cart</a>');</script>
+						<p class="item_Description">Women's Short-Sleeve Running Top</p>
                     </div>
                 </td>
             </tr>
             <tr>
-                <td>
+                <td style="border: solid;border-radius:5%;">
                     <div class="simpleCart_shelfItem">
-                        <h5 class="item_name">DUMMY PRODUCT 3</h5>
-												 <img src="images/num_2_m.gif" alt="DUMMY PRODUCT 2" title="DUMMY PRODUCT 2" class="item_image" style="z-index:-1;"/>
-                        <span class="item_price"><strong>R30.03</strong></span>
+                        <h2 class="item_name">Nike Cool Breeze</h2>
+												 <img src="../images/nikecoolbreezew.jpg" alt="Nike Cool Breeze" title="Nike Cool Breeze" class="item_image" style="z-index:-1;"/>
+                        <br><span class="item_price"><strong>30.00 €</strong></span><br>
 						<noscript><a href="no_javascript.html" class="item_add">Add to Cart</a>;</noscript>
-						<script>document.write('<a href="#" class="item_add">Add to Cart</a>');</script>
-						<p class="item_Description">product description product description<br/>product description product description</p>
+						<script>document.write('<a href="javascript:void(0);" class="item_add">Add to Cart</a>');</script>
+						<p class="item_Description">Women's Short-Sleeve Running, Cool Breeze technology made by Nike 2018.</p>
                     </div>
                 </td>
-                <td>
+                <td style="border: solid;border-radius:5%;">
+									<br>
                     <div class="simpleCart_shelfItem">
-                        <h5 class="item_name">T-SHIRT 4</h5>
-												 <img src="images/num_2_m.gif" alt="DUMMY PRODUCT 2" title="DUMMY PRODUCT 2" class="item_image" style="z-index:-1;"/>
-                        <span class="item_price"><strong>R40.04</strong></span>
+                        <h2 class="item_name">Nike City Cool Swoosh</h2>
+												 <img src="../images/nikecitycoolw.jpg" alt="Nike City Cool Swoosh" title="Nike City Cool Swoosh" class="item_image" style="z-index:-1;"/>
+                        <br><span class="item_price"><strong>32.78 €</strong></span><br>
 						<noscript><a href="no_javascript.html" class="item_add">Add to Cart</a>;</noscript>
-						<script>document.write('<a href="#" class="item_add">Add to Cart</a>');</script>
-						<p class="item_Description">product description product description<br/>product description product description</p>
+						<script>document.write('<a  href="javascript:void(0);" class="item_add">Add to Cart</a>');</script>
+						<p class="item_Description">City Cool Swoosh Running Top from Nike, made with a breathable Dri-FIT mesh fabric.</p>
                     </div>
                 </td>
             </tr>

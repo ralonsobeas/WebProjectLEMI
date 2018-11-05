@@ -87,8 +87,15 @@ body{
 	cursor:pointer;
 }
 
-.btn button{
-	margin:10px;
+.cart{
+	bottom:10%;
+	background:none;
+	border:none;
+	cursor:pointer;
+}
+
+#cart:focus{
+	outline:0;
 }
 
 .btn i{
@@ -220,14 +227,9 @@ body{
 	height: 30%;
 	border-style: solid double;
 	overflow:scroll;
+	top:22%;
 }
 
-.cart{
-	bottom:30px;
-	background:none;
-	border:none;
-	cursor:pointer;
-}
 
 .submenucart a{
 	text-decoration:none;
@@ -277,9 +279,15 @@ section table td{
 
 section table td img{
 	position: relative;
+	height: 40vh;
+	width: 40vh;
 	border-radius: 5%;
 	z-index: 0;
 	overflow: hidden;
+}
+
+section table p{
+	font-size: 4vh;
 }
 
 #tshirt img:hover{
