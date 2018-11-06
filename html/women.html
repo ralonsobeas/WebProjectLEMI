@@ -7,6 +7,84 @@
 		<link rel="stylesheet" type="text/css" href="../styles/women.css">
 		<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
 		<link rel="icon" type="img/png" href="../images/logoimg.png">
+		<script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+		  <script type="text/javascript" src="../js/simpleCart.js"></script>
+			<script type="text/javascript">
+					var shippingInfo = '';
+					var description = '';
+					function captureAddress()
+					{
+							$('body').append('<div style="position:absolute;top:0;left:0;width:100%;height:100%;background: rgb(0, 0, 0);background: rgba(0, 0, 0, 0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: \"progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)\";"><div style="border:solid thick #000000;width:350px;min-height:450px;margin:80px 450px;background:#FFFFFF;" id="formBox">&nbsp;</div></div>');
+							$('#formBox').html($('#form'));
+					}
+					simpleCart({
+							checkout: {
+									type: "SendForm" ,
+									url: "https://sandbox.payfast.co.za/eng/process" , //Change this to https://www.payfast.co.za/eng/process when you finished testing
+
+									// HTTP method for form, "POST"
+									method: "POST" ,
+
+									// URL to redirect browser to after successful checkout
+									success: "http://127.0.0.1:61742/html/womentshirts.html#" ,
+
+									// URL to redirect browser to after checkout was cancelled by buyer
+									cancel: "http://127.0.0.1:61742/html/womentshirts.html#" ,
+
+									extra_data: {
+											merchant_id: "10000100", // Change this to your merchant ID, you can find this in the Settings section of your PayFast account
+											merchant_key: "46f0cd694581a", // Change this to your merchant Key, you can find this in the Settings section of your PayFast account
+											notify_url: "http://127.0.0.1:61742/html/womentshirts.html#", // If you have a page to handle the ITN, else remove this line
+											item_name: "Purchase from my store", // Change this to describe a generic sale
+											m_payment_id: "123456789" // This could be used to identify the order within the ITN callback
+									}
+							},
+							// Custom function to handle shipping costs
+							shippingCustom: function(){
+
+									 if( simpleCart.quantity() > 20 ){
+												return 0;
+									 } else {
+												return 10.00;
+									 }
+							},
+							//shippingFlatRate: 10,    //a basic flat rate shipping
+							//shippingQuantityRate: 3, //rate based on the total quantity of the cart (i.e. shipping quantity rate of $3 = $21 for 7 items)
+							//shippingTotalRate: 0.1,  //a percentage of the total cost of the cart
+							beforeCheckout: function( data ){
+									//get shipping details
+									 $('.info').each(function(e){
+											var entry = $(this).val();
+											if(entry.length > 0)
+											{
+													shippingInfo += entry + ',';
+											}
+									}) ;
+
+									//get item details
+									$('.itemRow').each(function(e){
+											description += $(this).text() + ', ';
+									});
+
+									data.cancel_url = data.cancel_return;
+									data.return_url = data.return;
+									data.item_description = 'Items: ' + description + '<br />Shipping: ' + shippingInfo;
+									data.amount = simpleCart.grandTotal();
+							}
+					});
+
+					simpleCart.currency({
+							code: "EUR" ,
+							symbol: "E" ,
+							name: "South African Rand"
+					});
+
+
+
+
+
+			</script>
+
 	</head>
 
 	<body>
@@ -28,6 +106,11 @@
 									<div class="inside">
 										<img src="../images/slogan.png" alt="slogan" style="width:50%" id="slogan">
 									</div>
+									<td>
+										<button id="cart" class="btn" onclick="appearcart()">
+											<i class="fas fa-shopping-cart"></i>
+										</button>
+									</td>
 								</td>
 								<td class="media">
 										<a class="btn" href="#">
@@ -66,13 +149,34 @@
 				</div>
 				<div id="myMenu" class="menu">
 					<li> <a href="../index.html">Index</a> </li>
-					<li> <a href="../Page1.html">Page2</a> </li>
-					<li> <a href="#">Page3</a> </li>
-					<li> <a href="#">Page4</a> </li>
-					<li> <a href="#">Page5</a> </li>
+					<li> <a href="men.html">Men</a> </li>
+					<li> <a href="javascript:void(0);" style="color:skyblue">Women</a> </li>
+					<li> <a href="contact.html" >Contact!</a> </li>
 				</div>
 			</ul>
 		</nav>
+		<div id="idsubmenucart"  class="submenucart" >
+		<table >
+				<tr >
+						<td  class="shoppingcart-container" ><div class="simpleCart_items"></div></td>
+				</tr>
+				<tr>
+						<td  align="center">
+								<div id="cartTotal"><strong>Total: </strong><span class="simpleCart_total"></span></div>
+						</td>
+				</tr>
+				<tr>
+						<td>
+							<noscript><a href="no_javascript.html" class="simpleCart_empty">Empty Cart</a>;</noscript>
+							<script>document.write('<a href="#" class="simpleCart_empty">Empty Cart</a>');</script>
+						</td>
+						<td>
+							<noscript><a href="no_javascript.html" class="simpleCart_checkout">Checkout</a>;</noscript>
+							<script>document.write('<a href="#" class="simpleCart_checkout">Checkout</a>');</script>
+						</td>
+				</tr>
+		</table>
+		</div>
 
 
 		<script>
@@ -115,6 +219,15 @@
 					barwhite();
 				}
 			}
+			document.getElementById("idsubmenucart").style.display = "none";
+			function appearcart(){
+				if(document.getElementById("idsubmenucart").style.display == "none"){
+					document.getElementById("idsubmenucart").style.display = "block";
+				}
+				else{
+					document.getElementById("idsubmenucart").style.display = "none";
+				}
+			}
 
 		</script>
 
@@ -147,21 +260,6 @@
 			</table>
 		</section>
 
-		<section>
-			<div class="shopping-cart">
-      <div class="shopping-cart-head">
-        <span class="product-quantity">0</span> Product(s) in Cart
-      </div>
-      <ul class="shopping-cart-list">
-      </ul>
-      <div class="cart-buttons">
-        <a href="#0" class="button empty-cart-btn">Empty</a>
-        <a href="#0" class="button cart-checkout">Checkout - <span class="total-price">$0</span></a>
-      </div>
-    </div>
-  </div><!-- container -->
-
-		</section>
 
 		<!--Aside information-->
 		<aside>
