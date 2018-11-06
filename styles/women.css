@@ -223,9 +223,10 @@ body{
 	display:none;
 	position:fixed;
 	background: #E1E1E1;
-	width: 30%;
+	width: 33%;
 	height: 30%;
 	border-style: solid double;
+	border-top-left-radius: 5%;
 	overflow:scroll;
 	top:22%;
 }
@@ -233,12 +234,18 @@ body{
 
 .submenucart a{
 	text-decoration:none;
+	color:#aa4690;
+	background: #333;
+	padding-left: 1vh;
+	padding-right: 1vh;
+	border-radius: 5%;
+}
+
+.submenucart a:visited{
+	color:none;
 }
 
 
-.cart:hover .submenucart{
-	visibility: hidden;
-}
 
 
 @keyframes animationnavin{

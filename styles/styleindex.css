@@ -64,6 +64,17 @@ nav{
 	 transition: .5s ease;
 }
 
+.cart{
+	bottom:10%;
+	background:none;
+	border:none;
+	cursor:pointer;
+}
+
+#cart:focus{
+	outline:0;
+}
+
 .media  {
 	position: relative;
 	width: 80%;
@@ -221,6 +232,25 @@ nav{
 }
 
 
+.submenucart{
+	font-size:3vh;
+	display:none;
+	position:fixed;
+	background: #E1E1E1;
+	width: 30%;
+	height: 30%;
+	border-style: solid double;
+	border-top-left-radius: 5%;
+	overflow:scroll;
+	top:22%;
+	z-index:5;
+}
+
+
+.submenucart a{
+	text-decoration:none;
+}
+
 
 .container {
 	width:100%;
@@ -286,6 +316,13 @@ nav{
 	text-align: center;
 }
 
+.products img{
+	height: 40vh;
+	width: 40vh;
+	border-radius: 5%;
+	z-index: 0;
+ 	overflow: hidden;
+}
 
 #arrowdwn{
 	position:absolute;
