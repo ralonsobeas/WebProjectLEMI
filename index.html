@@ -95,78 +95,79 @@
 		<header>
 		</header>
 		<!--Navigation bar-->
-			<nav >
-				<div class="logomedia" >
-					<ul>
-						<li>
-							<table>
-								<tr>
-									<td class="logo">
-										<div class="outside">
-											<img src="images/logoimg.png" alt="logoimg" style="width:20%" >
-											<img src="images/logoname.png" alt="logotext" style="width:50%">
-										</div>
-										<div class="inside">
-											<img src="images/slogan.png" alt="slogan" style="width:50%" id="slogan">
-										</div>
-									</td>
-									<td>
-										<button id="cart" class="btn" onclick="appearcart()">
-											<i class="fas fa-shopping-cart"></i>
-										</button>
-									</td>
-									<td class="media">
-											<a class="btn" href="https://www.facebook.com/" target="_blank">
-												<i class="fab fa-facebook-f"></i>
-											</a>
-											<a class="btn" href="#">
-												<i class="fab fa-twitter"></i>
-											</a>
-											<a class="btn" href="#">
-												<i class="fab fa-google"></i>
-											</a>
-											<a class="btn" href="#">
-												<i class="fab fa-instagram"></i>
-											</a>
-											<a class="btn" href="#">
-												<i class="fab fa-youtube"></i>
-											</a>
-									</td>
-								<tr>
-							</table>
-						</li>
-					</ul>
-				</div>
-			</nav>
-
-			<nav id="navpages" class="navpages" style="position:sticky;top:11.2%;overflow: hidden;">
+					<nav class="logomedia">
+			<div >
 				<ul>
-					<div id="but" class="but">
-						<li>
-								<button class="dropbtn" onclick="myFunctionMenu(this)">
-									<div id="bar1" class="bar1"></div>
-									<div id="bar2"class="bar2"></div>
-									<div id="bar3" class="bar3"></div>
-								</button>
-						</li>
-					</div>
-					<div id="myMenu" class="menu">
-						<li> <a href="javascript:void(0);" style="color:skyblue">Index</a> </li>
-						<li> <a href="html/men.html">Men</a> </li>
-						<li> <a href="html/women.html">Women</a> </li>
-						<li> <a href="html/contact.html">Contact!</a> </li>
-					</div>
+					<li>
+						<table>
+							<tr>
+								<td class="logo" style="display:inline">
+									<div class="outside">
+										<img src="images/logoimg.png" alt="logoimg" style="width:20%" >
+										<img src="images/logoname.png" alt="logotext" style="width:50%">
+									</div>
+									<div class="inside">
+										<img src="images/slogan.png" alt="slogan" style="width:50%" id="slogan">
+									</div>
+								</td>
+
+								<td>
+									<button id="cart" class="btn" onclick="appearcart()">
+										<i class="fas fa-shopping-cart"></i>
+									</button>
+								</td>
+								<td class="media">
+										<a class="btn" href="#">
+											<i class="fab fa-facebook-f"></i>
+										</a>
+										<a class="btn" href="#">
+											<i class="fab fa-twitter"></i>
+										</a>
+										<a class="btn" href="#">
+											<i class="fab fa-google"></i>
+										</a>
+										<a class="btn" href="#">
+											<i class="fab fa-instagram"></i>
+										</a>
+										<a class="btn" href="#">
+											<i class="fab fa-youtube"></i>
+										</a>
+								</td>
+							<tr>
+						</table>
+					</li>
 				</ul>
-			</nav>
+			</div>
+		</nav>
+
+		<nav id="navpages" class="navpages" >
+			<ul>
+				<div id="but" class="but">
+					<li>
+							<button class="dropbtn" onclick="myFunctionMenu(this)">
+								<div id="bar1" class="bar1"></div>
+								<div id="bar2"class="bar2"></div>
+								<div id="bar3" class="bar3"></div>
+							</button>
+					</li>
+				</div>
+				<div id="myMenu" class="menu">
+					<li> <a href="javascript:void(0);" style="color:skyblue">Index</a> </li>
+					<li> <a href="html/men.html">Men</a> </li>
+					<li> <a href="html/women.html">Women</a> </li>
+					<li> <a href="html/contact.html">Contact!</a> </li>
+				</div>
+			</ul>
+		</nav>
 
 			<div id="idsubmenucart"  class="submenucart" >
 			<table >
 					<tr >
-							<td  class="shoppingcart-container" ><div class="simpleCart_items"></div></td>
+							<td class="shoppingcart-container" ><div style="width:120%;border: solid;border-radius:5%;" class="simpleCart_items"></div></td>
 					</tr>
 					<tr>
 							<td  align="center">
-									<div id="cartTotal"><strong>Total: </strong><span class="simpleCart_total"></span></div>
+									<div style="width:120%;border: solid;border-radius:5%;" id="cartTotal"><strong>Total: </strong><span class="simpleCart_total"></span></div>
 							</td>
 					</tr>
 					<tr>

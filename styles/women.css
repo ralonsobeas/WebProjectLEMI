@@ -15,6 +15,27 @@ body{
 	margin:inherit;
 }
 
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #333;
+}
+
+
 
 .logomedia{
 	position: sticky;
@@ -47,11 +68,11 @@ body{
 }
 
 .inside {
-  position: absolute;
-  top: 25%;
-  left: 2%;
-  width: 20%;
-  opacity: 0;
+	position: absolute;
+	top: 25%;
+	left: 2%;
+	width: 20%;
+	opacity: 0;
 	text-align:  left;
 	overflow: hidden;
 }
@@ -211,6 +232,28 @@ body{
 	top:15%;
 }
 
+#submenuproducts{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display:none;
+	overflow: hidden;
+	max-height: 0;
+	-webkit-transition: all 0.5s ease-out;
+	width: 20%;
+	top:100%;
+	border-bottom-left-radius:20%;
+	border-bottom-right-radius:20%;
+	background:#aa4690;
+}
+
+.menu li:hover #submenuproducts{
+	position:absolute;
+	display:block;
+	max-height:100px;
+}
+
+
 .menu{
 	display:none;
 	position:absolute;
@@ -222,15 +265,36 @@ body{
 	font-size:3vh;
 	display:none;
 	position:fixed;
-	background: #E1E1E1;
+	background: skyblue;
 	width: 33%;
 	height: 30%;
 	border-style: solid double;
-	border-top-left-radius: 5%;
-	overflow:scroll;
+	border-bottom-left-radius:5%;
+	border-top-left-radius:5%;
+	overflow-y:scroll;
 	top:22%;
+	z-index:2;
 }
 
+.submenucart::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+.submenucart::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+.submenucart::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #333;
+}
 
 .submenucart a{
 	text-decoration:none;
@@ -295,6 +359,18 @@ section table td img{
 
 section table p{
 	font-size: 4vh;
+}
+
+section table a{
+	color:#aa4690;
+	text-decoration:none;
+	background:#E1E1E1;
+	border-radius:5%;
+}
+
+section table a:hover{
+	color:#333;
+	background:#85144b;
 }
 
 #tshirt img:hover{

@@ -92,13 +92,13 @@
 		<header>
 		</header>
 		<!--Navigation bar-->
-		<nav>
-			<div class="logomedia">
+		<nav class="logomedia">
+			<div >
 				<ul>
 					<li>
 						<table>
 							<tr>
-								<td class="logo">
+								<td class="logo" style="display:inline">
 									<div class="outside">
 										<img src="../images/logoimg.png" alt="logoimg" style="width:20%" >
 										<img src="../images/logoname.png" alt="logotext" style="width:50%">
@@ -106,11 +106,12 @@
 									<div class="inside">
 										<img src="../images/slogan.png" alt="slogan" style="width:50%" id="slogan">
 									</div>
-									<td>
-										<button id="cart" class="btn" onclick="appearcart()">
-											<i class="fas fa-shopping-cart"></i>
-										</button>
-									</td>
+								</td>
+
+								<td>
+									<button id="cart" class="btn" onclick="appearcart()">
+										<i class="fas fa-shopping-cart"></i>
+									</button>
 								</td>
 								<td class="media">
 										<a class="btn" href="#">
@@ -136,7 +137,7 @@
 			</div>
 		</nav>
 
-		<nav id="navpages" class="navpages" style="position:sticky;top:11.2%">
+		<nav id="navpages" class="navpages" >
 			<ul>
 				<div id="but" class="but">
 					<li>
@@ -151,18 +152,18 @@
 					<li> <a href="../index.html">Index</a> </li>
 					<li> <a href="men.html">Men</a> </li>
 					<li> <a href="javascript:void(0);" style="color:skyblue">Women</a> </li>
-					<li> <a href="contact.html" >Contact!</a> </li>
+					<li> <a href="contact.html">Contact!</a> </li>
 				</div>
 			</ul>
 		</nav>
 		<div id="idsubmenucart"  class="submenucart" >
 		<table >
 				<tr >
-						<td  class="shoppingcart-container" ><div class="simpleCart_items"></div></td>
+						<td class="shoppingcart-container" ><div style="width:120%;border: solid;border-radius:5%;" class="simpleCart_items"></div></td>
 				</tr>
 				<tr>
 						<td  align="center">
-								<div id="cartTotal"><strong>Total: </strong><span class="simpleCart_total"></span></div>
+								<div style="width:120%;border: solid;border-radius:5%;" id="cartTotal"><strong>Total: </strong><span class="simpleCart_total"></span></div>
 						</td>
 				</tr>
 				<tr>
