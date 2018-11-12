@@ -214,7 +214,8 @@ body::-webkit-scrollbar-thumb
 .navpages li,.navpagesclick li{
 	padding-left: 2%;
 	padding-right: 8%;
-	display: inline;
+	display: inline-block;
+	height: 100%;
 }
 
 .navpages li a	,.navpagesclick li a{
@@ -251,6 +252,7 @@ body::-webkit-scrollbar-thumb
 	position:absolute;
 	display:block;
 	max-height:100px;
+
 }
 
 
@@ -259,6 +261,7 @@ body::-webkit-scrollbar-thumb
 	position:absolute;
 	width:80%;
 	height: 100%;
+	margin:0;
 }
 
 .submenucart{

@@ -40,7 +40,6 @@ nav{
 	position: sticky;
 	top:0;
 	z-index:3;
-	overflow: hidden;
 }
 
 .logomedia ul {
@@ -210,7 +209,8 @@ nav{
 .navpages li,.navpagesclick li{
 	padding-left: 2%;
 	padding-right: 8%;
-	display: inline;
+	display: inline-block;
+	height: 100%;
 }
 
 .navpages li a	,.navpagesclick li a{
@@ -226,6 +226,28 @@ nav{
 	background:none;
 	position:sticky;
 	top:15%;
+}
+
+#submenuproducts{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display:none;
+	overflow: hidden;
+	max-height: 0;
+	-webkit-transition: all 0.5s ease-out;
+	width: 20%;
+	top:100%;
+	border-bottom-left-radius:20%;
+	border-bottom-right-radius:20%;
+	background:#aa4690;
+}
+
+.menu li:hover #submenuproducts{
+	position:absolute;
+	display:block;
+	max-height:100px;
+	z-index: 10;
 }
 
 .menu{
