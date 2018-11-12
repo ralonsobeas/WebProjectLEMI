@@ -7,7 +7,7 @@ Cosas que faltan:
 
 -CSS de botón de compra.
 
--Footer: links.
+-Footer: links.XXXXX
 
 -Comentarios.
 
