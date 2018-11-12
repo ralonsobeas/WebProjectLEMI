@@ -5,7 +5,7 @@ Cosas que faltan:
 
 -Hover de las imágenes en index best seller,latest product con botón de compra.
 
--CSS de botón de compra.
+-CSS de botón de compra.XXXXX
 
 -Footer: links.XXXXX
 
