@@ -157,23 +157,24 @@ nav{
 .but{
 	display: inline;
 }
-.but .dropbtn{
+.but {
     display: inline;
     cursor: pointer;
-		background: none;
-		border: none;
+	background: none;
+	border: none;
 }
 
-.dropbtn:focus{
+.but:focus{
 	outline:0;
 }
 
 .bar1, .bar2, .bar3 {
-  width: 35px;
-  height: 5px;
+	display:block;
+	width: 35px;
+	height: 5px;
 	background-color: #333;
-  margin: 6px 0;
-  transition: 0.4s;
+	margin: 6px 0;
+	transition: 0.4s;
 }
 
 .change .bar1 {
@@ -227,46 +228,34 @@ nav{
 	top:15%;
 }
 
-#submenuproducts{
-	list-style: none;
-	padding: 0;
-	margin: 0;
+.submenuproducts {
+	position:absolute;
 	display:none;
-	overflow: hidden;
-	max-height: 0;
-	-webkit-transition: all 0.5s ease-out;
-	width: 20%;
 	top:100%;
 	border-bottom-left-radius:20%;
-	border-bottom-right-radius:20%;
-	background:#aa4690;
+	border-bottom-right-radius:20%;	
 }
 
-.menu li:hover #submenuproducts{
-	position:absolute;
+
+
+
+.menu li:hover .submenuproducts{
 	display:block;
-	max-height:100px;
+	background-color:#aa3690;
+	width:20%;
 	transition: 0.7s all;
 }
 
-.menu li {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  position: relative;
-  overflow: hidden;
-}
 .menu li:before {
   content: "";
   position: absolute;
+  top:90%;
   z-index: -1;
   left: 51%;
   right: 51%;
   bottom: 0;
   background: #2098D1;
-  height: 4px;
+  height: 0.5vh;
   -webkit-transition-property: left, right;
   transition-property: left, right;
   -webkit-transition-duration: 0.3s;
@@ -274,13 +263,13 @@ nav{
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
+
 .menu li:hover:before, .menu li:focus:before, .menu li:active:before {
-  left: 0;
+  left: 25%;
   right: 0;
 }
 .menu{
 	display:none;
-	position:absolute;
 	width:80%;
 	height: 100%;
 	transition:0.7 all;

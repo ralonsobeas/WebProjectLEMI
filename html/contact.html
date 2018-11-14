@@ -130,7 +130,6 @@
 											<i class="fab fa-youtube"></i>
 										</a>
 								</td>
-							<tr>
 						</table>
 					</li>
 				</ul>
@@ -138,34 +137,28 @@
 		</nav>
 
 		<nav id="navpages" class="navpages" >
-			<ul>
-				<div id="but" class="but">
-					<li>
-							<button class="dropbtn" onclick="myFunctionMenu(this)">
-								<div id="bar1" class="bar1"></div>
-								<div id="bar2"class="bar2"></div>
-								<div id="bar3" class="bar3"></div>
-							</button>
-					</li>
-				</div>
-				<div id="myMenu" class="menu">
+			<button id="but" class="but" onclick="myFunctionMenu(this)">
+				<span id="bar1" class="bar1"></span>
+				<span id="bar2" class="bar2"></span>
+				<span id="bar3" class="bar3"></span>
+			</button>
+			<ul id="myMenu" class="menu">
 					<li> <a href="../index.html">Index</a> </li>
 					<li>
 						<a href="men.html">Men</a>
-						<ul id="submenuproducts" style="left:16.2%;">
+						<ul class="submenuproducts" style="left:19.5%;">
 							<li> <a href="mentshirts.html">Men T-shirts</a> </li>
 							<li> <a href="mentrousers.html" >Men trousers</a> </li>
 						</ul>
 					 </li>
 					<li>
 						<a href="women.html">Women</a>
-						<ul id="submenuproducts" style="left:29.5%;">
+						<ul class="submenuproducts" style="left:32.5%;">
 							<li> <a href="womentshirts.html">Women T-shirts</a> </li>
 							<li> <a href="womentrousers.html" >Women trousers</a> </li>
 						</ul>
 					</li>
 					<li> <a href="javascript:void(0);" style="color:skyblue">Contact!</a> </li>
-				</div>
 			</ul>
 		</nav>
 		<div id="idsubmenucart"  class="submenucart" >
@@ -174,7 +167,7 @@
 						<td class="shoppingcart-container" ><div style="width:120%;border: solid;border-radius:5%;" class="simpleCart_items"></div></td>
 				</tr>
 				<tr>
-						<td  align="center">
+						<td >
 								<div style="width:120%;border: solid;border-radius:5%;" id="cartTotal"><strong>Total: </strong><span class="simpleCart_total"></span></div>
 						</td>
 				</tr>
@@ -245,7 +238,7 @@
 		</script>
 
 		<!--Section of the document -->
-		<div class="backgroundpattern">
+
 
 		<section id="top">
 			<div style="text-align:center">
@@ -279,9 +272,9 @@
 		</section>
 		<section>
 			<table> <!-- two col two rows -->
-				<th style="text-align:center;font-size:5vh;padding-top:2vh;" colspan="3">
-					<h1>Getting in touch is easy!</h1>
-				</th>
+				<caption style="text-align:center;font-size:5vh;padding-top:2vh;font-size:10vh;"	>
+					Getting in touch is easy!
+				</caption>
 				<tr>
 					<td style="width:55%;text-align:right;vertical-align:top">
 						<address>
@@ -301,11 +294,11 @@
 					</td>
 					<td style="width:45%;padding-right:10%;text-align:right;">
 						<form>
-							<input type="text" placeholder="Your Name" size="80vh" required>
+							<input type="text" placeholder="Your Name" size="80" required>
 							<br><br>
-							<input type="email" placeholder="Your email" size="80vh" required>
+							<input type="email" placeholder="Your email" size="80" required>
 							<br><br>
-							<textarea placeholder="Write here!" cols="80vh" rows="10vh"></textarea>
+							<textarea placeholder="Write here!" cols="80" rows="10"></textarea>
 							<br><br>
 							<input id="submit" type="submit" value="Send to our team!">
 						</form>
@@ -320,7 +313,7 @@
 		</aside>
 		<!--Foot of the document-->
 		<footer>
-			&#169; JustFit 2018   By Rodrigo Alonso <a href="#top" target:"_blank"> About us & Contact!</a>
+			&#169; JustFit 2018   By Rodrigo Alonso <a href="#top" target="_blank"> About us & Contact!</a>
 		</footer>
 	</body>
 </html>
