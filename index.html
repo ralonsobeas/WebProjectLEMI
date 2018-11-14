@@ -96,7 +96,7 @@
 		<header>
 		</header>
 		<!--Navigation bar-->
-					<nav class="logomedia">
+			<nav class="logomedia">
 			<div >
 				<ul>
 					<li>
@@ -141,35 +141,29 @@
 		</nav>
 
 		<nav id="navpages" class="navpages" >
-			<ul>
-				<div id="but" class="but">
-					<li>
-							<button class="dropbtn" onclick="myFunctionMenu(this)">
-								<div id="bar1" class="bar1"></div>
-								<div id="bar2"class="bar2"></div>
-								<div id="bar3" class="bar3"></div>
-							</button>
-					</li>
-				</div>
-				<div id="myMenu" class="menu">
+				<button id="but" class="but" onclick="myFunctionMenu(this)">
+					<span id="bar1" class="bar1"></span>
+					<span id="bar2" class="bar2"></span>
+					<span id="bar3" class="bar3"></span>
+				</button>
+				<ul id="myMenu" class="menu">
 					<li> <a href="javascript:void(0);" style="color:skyblue">Index</a> </li>
 					<li>
 						<a href="html/men.html">Men</a>
-						<ul id="submenuproducts" style="left:16.2%;">
+						<ul class="submenuproducts" style="left:29%;">
 							<li> <a href="html/mentshirts.html">Men T-shirts</a> </li>
 							<li> <a href="html/mentrousers.html" >Men trousers</a> </li>
 						</ul>
 					 </li>
 					<li>
 						<a href="html/women.html">Women</a>
-						<ul id="submenuproducts" style="left:29.5%;">
+						<ul class="submenuproducts" style="left:46%;">
 							<li> <a href="html/womentshirts.html">Women T-shirts</a> </li>
 							<li> <a href="html/womentrousers.html" >Women trousers</a> </li>
 						</ul>
 					</li>
 					<li> <a href="html/contact.html">Contact!</a> </li>
-				</div>
-			</ul>
+				</ul>
 		</nav>
 
 			<div id="idsubmenucart"  class="submenucart" >
@@ -178,7 +172,7 @@
 							<td class="shoppingcart-container" ><div style="width:120%;border: solid;border-radius:5%;" class="simpleCart_items"></div></td>
 					</tr>
 					<tr>
-							<td  align="center">
+							<td >
 									<div style="width:120%;border: solid;border-radius:5%;" id="cartTotal"><strong>Total: </strong><span class="simpleCart_total"></span></div>
 							</td>
 					</tr>
@@ -220,7 +214,7 @@
 				function myFunctionMenu(x){
 					if (document.getElementById("myMenu").style.display == "inline"){
 						document.getElementById("navpages").style.animation = "animationnavout 1s ease";
-						document.getElementById("navpages").className = "navpagesclick";
+						document.getElementById("navpages").className = "navpages";
 						document.getElementById("but").style.animation = "none";
 						setTimeout(wait,800);
 						barblack();
@@ -257,8 +251,9 @@
 					<img src="images/ski.png" alt="ski" >
 			</div>
 		</section>
-		<section id="products" class="products" style="height:130vh;overflow:hidden">
-			<h1 data-aos="fade-right" data-aos-duration="3000" data-aos-easing="ease">JUSTSPORT</h2>
+		<section class="products" style="height:130vh;overflow:hidden">
+			<div id="products" ><br><br><br></div>
+			<h1 data-aos="fade-right" data-aos-duration="3000" data-aos-easing="ease">JUSTSPORT</h1>
 			<p data-aos="zoom-out" data-aos-duration="3000" data-aos-easing="ease">SELLING THE BEST PRODUCTS FOR YOU</p>
 			<table>  <!-- 2 cols 2 rows-->
 				<tr>
@@ -270,13 +265,13 @@
 						<img data-aos="fade-left" data-aos-duration="3000" data-aos-delay="300" data-aos-easing="ease" src="images/nikearimaxmlong.jpg" alt="bestseller">
 					</td>
 				</tr>
+				<tr>
 					<td>
 						<img data-aos="fade-right" data-aos-duration="3000" data-aos-delay="300" data-aos-easing="ease" src="images/nikeepicrunw.jpg" alt="latestprod">
 					</td>
 					<td>
 						<p data-aos="fade-left" data-aos-duration="3000" data-aos-delay="300" data-aos-easing="ease">LATEST PRODUCT</p>
 					</td>
-				<tr>
 				</tr>
 			</table>
 
@@ -291,7 +286,7 @@
 		</aside>
 		<!--Foot of the document-->
 		<footer>
-			&#169; JustFit 2018   By Rodrigo Alonso<a href="html/contact.html" target:"_blank"> About us & Contact!</a>
+			&#169; JustFit 2018   By Rodrigo Alonso<a href="html/contact.html" target="_blank"> About us & Contact!</a>
 		</footer>
 		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	  <script>

@@ -158,18 +158,19 @@ nav{
 .but{
 	display: inline;
 }
-.but .dropbtn{
-    display: inline;
-    cursor: pointer;
-		background: none;
-		border: none;
+.but{
+  display: inline;
+  cursor: pointer;
+	background: none;
+	border: none;
 }
 
-.dropbtn:focus{
+.but:focus{
 	outline:0;
 }
 
 .bar1, .bar2, .bar3 {
+	display: block;
   width: 35px;
   height: 5px;
 	background-color: #333;
@@ -194,7 +195,9 @@ nav{
 
 .navpages{
 	background:none;
-	position:siticky;
+	border-radius: 25px;
+	position: fixed;
+	width: 40%;
 	top:15%;
 }
 
@@ -210,6 +213,7 @@ nav{
 	padding-left: 2%;
 	padding-right: 8%;
 	display: inline-block;
+	background: none;
 	height: 100%;
 }
 
@@ -223,38 +227,31 @@ nav{
 .navpagesclick{
 	background: linear-gradient(to right, #2a2460 0%, #aa4690 100%);
 	border-radius: 25px;
-	background:none;
-	position:sticky;
+	position:fixed;
+	width: 40%;
 	top:15%;
 }
 
-#submenuproducts{
-	list-style: none;
-	padding: 0;
-	margin: 0;
+.submenuproducts{
+	position:absolute;
 	display:none;
-	overflow: hidden;
-	max-height: 0;
-	-webkit-transition: all 0.5s ease-out;
-	width: 20%;
 	top:100%;
 	border-bottom-left-radius:20%;
 	border-bottom-right-radius:20%;
-	background:#aa4690;
 }
 
-.menu li:hover #submenuproducts{
-	position:absolute;
+.menu li:hover .submenuproducts{
 	display:block;
-	max-height:100px;
-	z-index: 10;
+	background-color:#aa3690;
+	width:40%;
+	transition: 0.7s all;
 }
 
 .menu{
 	display:none;
-	position:absolute;
-	width:80%;
-	height: 100%;
+	width:100%;
+	height: 80%;
+	transition:0.7 all;
 }
 
 @keyframes animationnavin{
