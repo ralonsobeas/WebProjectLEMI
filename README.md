@@ -1,7 +1,7 @@
 # WebProject
 Cosas que faltan: 
 
--CSS de : men,mentrousers,ment-shirts cambiar background.
+-CSS de : men,mentrousers,ment-shirts cambiar background. XXXXX FALTA CAMBIAR BACKGROUND
 
 -Hover de las imágenes en index best seller,latest product con botón de compra.
 
@@ -9,7 +9,7 @@ Cosas que faltan:
 
 -Footer: links.XXXXX
 
--Comentarios.
+-Comentarios.XXXXX
 
--Validaciones.
+-Validaciones.XXXXX
 
