@@ -2,13 +2,15 @@
 <html lang="en">
 
 	<head>
-		<title>Shop</title>
+		<title>JustSport</title>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="../styles/women.css">
 		<link rel="stylesheet" type="text/css" href="../styles/common.css">
 		<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
 		<link rel="icon" type="img/png" href="../images/logoimg.png">
+		<!-- text and images movement -->
 		<script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+		<!-- Shopping cart github-url: -->
 		  <script type="text/javascript" src="../js/simpleCart.js"></script>
 			<script type="text/javascript">
 					var shippingInfo = '';
@@ -88,17 +90,18 @@
 
 	</head>
 
-	<body>
+	<body style="background:#FF851B">
 		<!--Header of the document -->
 		<header>
 		</header>
-		<!--Navigation bar-->
+		<!--Navigation bar with logo and media buttons-->
 		<nav class="logomedia">
 			<div >
 				<ul>
 					<li>
 						<table>
 							<tr>
+								<!-- logo -->
 								<td class="logo" style="display:inline">
 									<div class="outside">
 										<img src="../images/logoimg.png" alt="logoimg" style="width:20%" >
@@ -108,12 +111,13 @@
 										<img src="../images/slogan.png" alt="slogan" style="width:50%" id="slogan">
 									</div>
 								</td>
-
+								<!-- Shopping cart button -->
 								<td>
 									<button id="cart" class="btn" onclick="appearcart()">
 										<i class="fas fa-shopping-cart"></i>
 									</button>
 								</td>
+								<!-- Media buttons -->
 								<td class="media">
 										<a class="btn" href="#">
 											<i class="fab fa-facebook-f"></i>
@@ -136,7 +140,7 @@
 				</ul>
 			</div>
 		</nav>
-
+		<!-- Navigation bar between html -->
 		<nav id="navpages" class="navpages" >
 
 							<button id="but" class="but" onclick="myFunctionMenu(this)">
@@ -154,7 +158,7 @@
 								<li> <a href="mentshirts.html">Men T-shirts</a> </li>
 								<li> <a href="mentrousers.html" >Men trousers</a> </li>
 							</ul>
-		
+
 					</li>
 					<li>
 						<a href="women.html">Women</a>
@@ -166,7 +170,7 @@
 					<li> <a href="contact.html">Contact!</a> </li>
 				</ul>
 		</nav>
-
+			<!-- Shopping cart, appears when pressing Shopping cart button -->
 		<div id="idsubmenucart"  class="submenucart" >
 			<table >
 				<tr >
@@ -190,8 +194,9 @@
 			</table>
 		</div>
 
-
+		<!-- Script for navigation bar between html and shopping cart -->
 		<script>
+		<!--Script for navigation bar -->
 			function myFunction(x) {
 				x.classList.toggle("change");
 			}
@@ -231,6 +236,7 @@
 					barwhite();
 				}
 			}
+			<!-- Script for cart -->
 			document.getElementById("idsubmenucart").style.display = "none";
 			function appearcart(){
 				if(document.getElementById("idsubmenucart").style.display == "none"){
@@ -252,12 +258,12 @@
 
 		</section>
 		<section>
-			<!-- 2 cols 1 row -->
+			<!-- table 2 cols 1 row with products-->
 			<table>
 				<tr>
 					<td id="tshirt">
 						<a href="mentshirts.html" >
-							<img src="../images/mentshirt.jpg" alt="mentshirt" style=";height:50vh;width:65vh">
+							<img src="../images/mentshirt.jpg" alt="mentshirt" style=";height:50vh;width:65vh;">
 							<p class="imgtxt" style="position:absolute;top:60%;left:22%;overflow:hidden;">T-shirts</p>
 						</a>
 					</td>
@@ -268,13 +274,11 @@
 						</a>
 					</td>
 				</tr>
+				<br>
 
 			</table>
 		</section>
 
-		<!--Aside information-->
-		<aside>
-		</aside>
 		<!--Foot of the document-->
 		<footer>
 			&#169; JustFit 2018   By Rodrigo Alonso <a href="contact.html" target="_blank"> About us & Contact!</a>

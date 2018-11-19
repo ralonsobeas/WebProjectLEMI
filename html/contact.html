@@ -8,8 +8,10 @@
 		<link rel="stylesheet" type="text/css" href="../styles/common.css">
 		<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
 		<link rel="icon" type="img/png" href="../images/logoimg.png">
+		<!-- text and images movement -->
 		<script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
 		  <script type="text/javascript" src="../js/simpleCart.js"></script>
+			<!-- Shopping cart github-url: -->
 			<script type="text/javascript">
 					var shippingInfo = '';
 					var description = '';
@@ -92,13 +94,14 @@
 		<!--Header of the document -->
 		<header>
 		</header>
-		<!--Navigation bar-->
+		<!--Navigation bar with logo and media buttons-->
 				<nav class="logomedia">
 			<div >
 				<ul>
 					<li>
 						<table>
 							<tr>
+								<!-- logo -->
 								<td class="logo" style="display:inline">
 									<div class="outside">
 										<img src="../images/logoimg.png" alt="logoimg" style="width:20%" >
@@ -108,12 +111,13 @@
 										<img src="../images/slogan.png" alt="slogan" style="width:50%" id="slogan">
 									</div>
 								</td>
-
+								<!-- Shopping cart button -->
 								<td>
 									<button id="cart" class="btn" onclick="appearcart()">
 										<i class="fas fa-shopping-cart"></i>
 									</button>
 								</td>
+								<!-- Media buttons -->
 								<td class="media">
 										<a class="btn" href="#">
 											<i class="fab fa-facebook-f"></i>
@@ -136,7 +140,7 @@
 				</ul>
 			</div>
 		</nav>
-
+		<!-- Navigation bar between html -->
 		<nav id="navpages" class="navpages" >
 			<button id="but" class="but" onclick="myFunctionMenu(this)">
 				<span id="bar1" class="bar1"></span>
@@ -162,6 +166,7 @@
 					<li> <a href="javascript:void(0);" style="color:skyblue">Contact!</a> </li>
 			</ul>
 		</nav>
+		<!-- Shopping cart, appears when pressing Shopping cart button -->
 		<div id="idsubmenucart"  class="submenucart" >
 		<table >
 				<tr >
@@ -185,8 +190,9 @@
 		</table>
 		</div>
 
-
+		<!-- Script for navigation bar between html and shopping cart -->
 		<script>
+			<!--Script for navigation bar -->
 			function myFunction(x) {
 				x.classList.toggle("change");
 			}
@@ -226,6 +232,7 @@
 					barwhite();
 				}
 			}
+			<!-- Script for cart -->
 			document.getElementById("idsubmenucart").style.display = "none";
 			function appearcart(){
 				if(document.getElementById("idsubmenucart").style.display == "none"){
@@ -244,11 +251,11 @@
 		<section id="top">
 			<div style="text-align:center">
 				<h1> Leave us a <b>message</b></h1>
-				<!-- Printbar -->
 				<p> You can find us literally anywhere! </p>
 			</div>
 
 		</section>
+		<!-- Big media buttons -->
 		<section>
 			<div class="media" style="width: 93%;text-align:center;padding:3%">
 					<a class="btn" href="#" style="width: 15vh;height: 15vh">
@@ -272,11 +279,12 @@
 		</div>
 		</section>
 		<section>
-			<table> <!-- two col two rows -->
+			<table> <!-- table with two col two rows -->
 				<caption style="text-align:center;font-size:5vh;padding-top:2vh;font-size:10vh;"	>
 					Getting in touch is easy!
 				</caption>
 				<tr>
+					<!-- Adress, telephone,email-->
 					<td style="width:55%;text-align:right;vertical-align:top">
 						<address>
 							Araba Kalea, 39, 01006 Vitoria-Gasteiz, Araba<br>
@@ -289,17 +297,18 @@
 							<br>
 							contact@justsport.com<br>
 					</td>
-
+					<!-- zip img -->
 					<td style="vertical-align:top">
 						<img src="../images/zip.png" alt="zipimg">
 					</td>
+					<!-- Contact form-->
 					<td style="width:45%;padding-right:10%;text-align:right;">
 						<form>
 							<input type="text" placeholder="Your Name" size="80" required>
 							<br><br>
 							<input type="email" placeholder="Your email" size="80" required>
 							<br><br>
-							<textarea placeholder="Write here!" cols="80" rows="10"></textarea>
+							<textarea placeholder="Write here!" cols="80" rows="10" required></textarea>
 							<br><br>
 							<input id="submit" type="submit" value="Send to our team!">
 						</form>
@@ -309,9 +318,6 @@
 			</table>
 		</section>
 
-		<!--Aside information-->
-		<aside>
-		</aside>
 		<!--Foot of the document-->
 		<footer>
 			&#169; JustFit 2018   By Rodrigo Alonso <a href="#top" target="_blank"> About us & Contact!</a>

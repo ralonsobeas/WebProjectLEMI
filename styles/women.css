@@ -28,6 +28,7 @@ section table td{
 }
 
 section table td img{
+	background: #85144b;
 	position: relative;
 	height: 40vh;
 	width: 40vh;
@@ -43,13 +44,13 @@ section table p{
 section table a{
 	color:#aa4690;
 	text-decoration:none;
-	background:#E1E1E1;
+	background:none;
 	border-radius:5%;
 }
 
 section table a:hover{
 	color:#333;
-	background:#85144b;
+
 }
 
 /* T-shirt and trousers hover for men.html and women.html */
@@ -74,7 +75,8 @@ section table a:hover{
 
 /* Footer */
 footer{
-	position: relative;
-	bottom:0;
+	position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
-

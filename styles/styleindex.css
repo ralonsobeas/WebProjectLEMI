@@ -2,7 +2,7 @@
 /* Body background */
 
 body{
-	background: #E1E1E1;
+	background-color: #001f3f;
 }
 
 
@@ -47,11 +47,22 @@ body{
 	animation-delay:30s;
 }
 
+/* Video */
+video{
+	width: 100%;
+	margin:0;
+	padding:0;
+}
+
 /* Products section */
 .products{
 	background-color: #001f3f;
 	color :white;
 	text-align: center;
+	margin:0;
+	padding:0;
+	height:135vh;
+	overflow:hidden;
 }
 .products h1{
 	font-size: 10vh;
@@ -100,5 +111,3 @@ footer{
 	bottom:0;
 	z-index
 }
-
-
