@@ -6,10 +6,13 @@
 		<title>JustSport</title>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="styles/styleindex.css">
+		<link rel="stylesheet" type="text/css" href="styles/common.css">
 		<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
 		<link rel="icon" type="img/png" href="images/logoimg.png">
+		<!-- text and images movement -->
 		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<!-- Shopping cart github-url: -->
 		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
 		  <script type="text/javascript" src="js/simpleCart.js"></script>
 			<script type="text/javascript">
@@ -95,13 +98,14 @@
 		<!--Header of the document -->
 		<header>
 		</header>
-		<!--Navigation bar-->
+		<!--Navigation bar with logo and media buttons-->
 			<nav class="logomedia">
 			<div >
 				<ul>
 					<li>
 						<table>
 							<tr>
+								<!-- logo -->
 								<td class="logo" style="display:inline">
 									<div class="outside">
 										<img src="images/logoimg.png" alt="logoimg" style="width:20%" >
@@ -111,12 +115,13 @@
 										<img src="images/slogan.png" alt="slogan" style="width:50%" id="slogan">
 									</div>
 								</td>
-
+								<!-- Shopping cart button -->
 								<td>
 									<button id="cart" class="btn" onclick="appearcart()">
 										<i class="fas fa-shopping-cart"></i>
 									</button>
 								</td>
+								<!-- Media buttons -->
 								<td class="media">
 										<a class="btn" href="#">
 											<i class="fab fa-facebook-f"></i>
@@ -139,7 +144,8 @@
 				</ul>
 			</div>
 		</nav>
-
+		
+		<!-- Navigation bar between html -->
 		<nav id="navpages" class="navpages" >
 				<button id="but" class="but" onclick="myFunctionMenu(this)">
 					<span id="bar1" class="bar1"></span>
@@ -165,9 +171,9 @@
 					<li> <a href="html/contact.html">Contact!</a> </li>
 				</ul>
 		</nav>
-
+			<!-- Shopping cart, appears when pressing Shopping cart button -->
 			<div id="idsubmenucart"  class="submenucart" >
-			<table >
+				<table >
 					<tr >
 							<td class="shoppingcart-container" ><div style="width:120%;border: solid;border-radius:5%;" class="simpleCart_items"></div></td>
 					</tr>
@@ -186,11 +192,12 @@
 								<script>document.write('<a href="#" class="simpleCart_checkout">Checkout</a>');</script>
 							</td>
 					</tr>
-			</table>
+				</table>
 			</div>
 
-
+			<!-- Script for navigation bar between html and shopping cart -->
 			<script>
+				<!--Script for navigation bar -->
 				function myFunction(x) {
 					x.classList.toggle("change");
 				}
@@ -230,6 +237,7 @@
 						barwhite();
 					}
 				}
+				<!-- Script for cart -->
 				document.getElementById("idsubmenucart").style.display = "none";
 				function appearcart(){
 					if(document.getElementById("idsubmenucart").style.display == "none"){
@@ -242,7 +250,7 @@
 
 			</script>
 
-		<!--Section of the document -->
+		<!-- Index images-->
 		<section style="border: 0">
 			<div class="container">
 					<img src="images/bike.png" alt="basket" >
@@ -251,6 +259,7 @@
 					<img src="images/ski.png" alt="ski" >
 			</div>
 		</section>
+		<!-- Best seller and last product data-aos->creates the movement with external css and script -->
 		<section class="products" style="height:130vh;overflow:hidden">
 			<div id="products" ><br><br><br></div>
 			<h1 data-aos="fade-right" data-aos-duration="3000" data-aos-easing="ease">JUSTSPORT</h1>
@@ -277,7 +286,7 @@
 
 		</section>
 
-		<!--Aside information-->
+		<!-- Arrow to move to the bottom of the page -->
 		<aside>
 			<a id="arrowdwn" href="#products" onclick="scrollbotttom()" >
 				<i  class="fas fa-arrow-circle-down"></i>
@@ -288,6 +297,7 @@
 		<footer>
 			&#169; JustFit 2018   By Rodrigo Alonso<a href="html/contact.html" target="_blank"> About us & Contact!</a>
 		</footer>
+		<!-- Script for the movement of section class=products -->
 		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	  <script>
 	    AOS.init();

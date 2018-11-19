@@ -5,6 +5,7 @@
 		<title>Shop</title>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="../styles/women.css">
+		<link rel="stylesheet" type="text/css" href="../styles/common.css">
 		<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
 		<link rel="icon" type="img/png" href="../images/logoimg.png">
 		<script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
@@ -93,7 +94,6 @@
 		</header>
 		<!--Navigation bar-->
 		<nav class="logomedia">
-			<div >
 				<ul>
 					<li>
 						<table>
@@ -130,42 +130,36 @@
 											<i class="fab fa-youtube"></i>
 										</a>
 								</td>
-							<tr>
 						</table>
 					</li>
 				</ul>
-			</div>
 		</nav>
 
 		<nav id="navpages" class="navpages" >
-			<ul>
-				<div id="but" class="but">
-					<li>
-							<button class="dropbtn" onclick="myFunctionMenu(this)">
-								<div id="bar1" class="bar1"></div>
-								<div id="bar2"class="bar2"></div>
-								<div id="bar3" class="bar3"></div>
+
+							<button  id="but" class="but" onclick="myFunctionMenu(this)">
+								<span id="bar1" class="bar1"></span>
+								<span id="bar2" class="bar2"></span>
+								<span id="bar3" class="bar3"></span>
 							</button>
-					</li>
-				</div>
-				<div id="myMenu" class="menu">
+
+				<ul id="myMenu" class="menu">
 					<li> <a href="../index.html">Index</a> </li>
 					<li>
 						<a href="men.html">Men</a>
-						<ul id="submenuproducts" style="left:16.2%;">
+						<ul class="submenuproducts" style="left:29%;">
 							<li> <a href="mentshirts.html">Men T-shirts</a> </li>
 							<li> <a href="mentrousers.html" >Men trousers</a> </li>
 						</ul>
 					 </li>
 					<li>
 						<a href="women.html" style="color:skyblue">Women</a>
-						<ul id="submenuproducts" style="left:29.5%;">
+						<ul class="submenuproducts" style="left:46%;">
 							<li> <a href="javascript:void(0);" style="color:skyblue">Women T-shirts</a> </li>
 							<li> <a href="womentrousers.html" >Women trousers</a> </li>
 						</ul>
 					</li>
 					<li> <a href="contact.html">Contact!</a> </li>
-				</div>
 			</ul>
 		</nav>
 
@@ -175,7 +169,7 @@
 						<td class="shoppingcart-container" ><div style="width:120%;border: solid;border-radius:5%;" class="simpleCart_items"></div></td>
 				</tr>
 				<tr>
-						<td  align="center">
+						<td  >
 								<div style="width:120%;border: solid;border-radius:5%;" id="cartTotal"><strong>Total: </strong><span class="simpleCart_total"></span></div>
 						</td>
 				</tr>
@@ -247,7 +241,7 @@
 
 		<section >
 			<div style="text-align:center">
-				<h1> Women T-shirts</b></h1>
+				<h1> Women T-shirts</h1>
 			</div>
 
 		</section>
@@ -307,7 +301,7 @@
 		</aside>
 		<!--Foot of the document-->
 		<footer>
-			&#169; JustFit 2018   By Rodrigo Alonso <a href="contact.html" target:"_blank"> About us & Contact!</a>
+			&#169; JustFit 2018   By Rodrigo Alonso <a href="contact.html" target="_blank"> About us & Contact!</a>
 		</footer>
 	</body>
 </html>

@@ -1,3 +1,4 @@
+/* Font family */
 @font-face {
 	font-family: BebasNeuer;
 	src: url('../fonts/bebas_neue/BebasNeue Bold.otf');
@@ -5,22 +6,46 @@
 	font-style: normal;
 }
 
+/* Scrolling animation */
+html {
+  scroll-behavior: smooth;
+}
 
+/* Body  */
 body{
 	font-family: BebasNeuer;
-	background-color:#2ECC40;
-	background-position: right;
-	z-index:-1;
-	background-attachment: fixed;
 	margin:inherit;
 }
 
+/* Scrollbar */
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #333;
+}
+
+/* Navigation bar */
 nav{
 	position: sticky;
 	top:0;
-	z-index:1;
+	z-index:3;
 }
 
+/* Logo and media navigation bar  */
 .logomedia ul {
 	list-style-type: none;
 	height:10%;
@@ -37,6 +62,7 @@ nav{
 	overflow: hidden;
 }
 
+/* Logo and hover */
 .logo{
 	text-align: left;
 	overflow:  hidden;
@@ -62,6 +88,19 @@ nav{
 	 transition: .5s ease;
 }
 
+/* Cart button */
+.cart{
+	bottom:10%;
+	background:none;
+	border:none;
+	cursor:pointer;
+}
+
+#cart:focus{
+	outline:0;
+}
+
+/* Media buttons and animation  */
 .media  {
 	position: relative;
 	width: 80%;
@@ -76,7 +115,7 @@ nav{
 	background: #f1f1f1;
 	margin: 1%;
 	border-radius: 30%;
-	box-shadow: 0 5px 15px -5px #00000070;
+	box-shadow: 0 5px 15px -5px rgba(0,0,0,0.7);
 	color: #aa4690;
 	overflow: hidden;
 	position: relative;
@@ -123,21 +162,25 @@ nav{
 	}
 }
 
+/* Navigation bar between html */
+
+/* Menu button and movement */
 .but{
 	display: inline;
 }
-.but .dropbtn{
-    display: inline;
-    cursor: pointer;
-		background: none;
-		border: none;
+.but{
+  display: inline;
+  cursor: pointer;
+	background: none;
+	border: none;
 }
 
-.dropbtn:focus{
+.but:focus{
 	outline:0;
 }
 
 .bar1, .bar2, .bar3 {
+	display: block;
   width: 35px;
   height: 5px;
 	background-color: #333;
@@ -160,10 +203,13 @@ nav{
 	transition-delay: 1s;
 }
 
+/* General menu css */
 .navpages{
 	background:none;
-	position:siticky;
-	top:13%;
+	border-radius: 25px;
+	position: fixed;
+	width: 40%;
+	top:15%;
 }
 
 .navpages ul,.navpagesclick ul{
@@ -177,7 +223,9 @@ nav{
 .navpages li,.navpagesclick li{
 	padding-left: 2%;
 	padding-right: 8%;
-	display: inline;
+	display: inline-block;
+	background: none;
+	height: 100%;
 }
 
 .navpages li a	,.navpagesclick li a{
@@ -190,16 +238,32 @@ nav{
 .navpagesclick{
 	background: linear-gradient(to right, #2a2460 0%, #aa4690 100%);
 	border-radius: 25px;
-	background:none;
-	position:sticky;
-	top:13%;
+	position:fixed;
+	width: 40%;
+	top:15%;
+}
+
+/* Submenu */
+.submenuproducts{
+	position:absolute;
+	display:none;
+	top:100%;
+	border-bottom-left-radius:20%;
+	border-bottom-right-radius:20%;
+}
+
+.menu li:hover .submenuproducts{
+	display:block;
+	background-color:#aa3690;
+	width:40%;
+	transition: 0.7s all;
 }
 
 .menu{
 	display:none;
-	position:absolute;
-	width:80%;
-	height: 100%;
+	width:100%;
+	height: 80%;
+
 }
 
 @keyframes animationnavin{
@@ -218,49 +282,61 @@ nav{
 	transform :translatex(-100%); }
 }
 
-
-
-section h1{
-	font-size: 10vh;
-}
-section p{
-	font-size: 5vh;
-}
-
-section table{
-	font-size: 4vh;
-	text-align:left;
-	width:100%;
-}
-
-section table td{
-	width: 50%;
-	text-align:center;
+/* Cart css and scrollbar */
+.submenucart{
+	font-size:3vh;
+	display:none;
+	position:fixed;
+	background: skyblue;
+	width: 33%;
+	height: 30%;
+	border-style: solid double;
+	border-bottom-left-radius:5%;
+	border-top-left-radius:5%;
+	overflow-y:scroll;
+	top:22%;
+	z-index:2;
 }
 
-section table td img{
-	position: relative;
+.submenucart a{
+	text-decoration:none;
+	color:#aa4690;
+	background: #333;
+	padding-left: 1vh;
+	padding-right: 1vh;
 	border-radius: 5%;
-	z-index:0;
 }
 
-section table td img:hover{
-	opacity: 0.2;
-	transition: .5s ease;
+.submenucart a:visited{
+	color:#aa4690;
 }
 
-#imgtxt{
-	text-decoration: none;
-	color:#333;
-	z-index: -1;
+.submenucart::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
 }
 
+.submenucart::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+.submenucart::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #333;
+}
+
+/* Footer */
 footer{
-	position: relative;
 	width:100%;
 	background-color: #E1E1E1;
 	color: #aa4690;
-	bottom:0;
+
 }
 
 footer a{
@@ -268,3 +344,4 @@ footer a{
 	color:#2a2460;
 	padding-left: 10%;
 }
+
