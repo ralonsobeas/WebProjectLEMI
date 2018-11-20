@@ -10,11 +10,11 @@ body{
 /* Index images container and movement */
 .container {
 	width:100%;
-	height:642px;
+	height:644px;
 	overflow:hidden;
 	position:relative;
 	z-index:1;
-	background: white;
+	background: #001f3f;
 }
 
 .container img{
@@ -23,7 +23,6 @@ body{
 	opacity:0;
 	width: 100%;
 	height: 642px;
-	background-color: red;
 }
 
 @keyframes fling-minislide {
@@ -100,7 +99,7 @@ video{
 	font-size: 15vh;
 	z-index:2;
 	text-decoration: none;
-	color: #333;
+	color:  #F5F5F5;
 }
 
 

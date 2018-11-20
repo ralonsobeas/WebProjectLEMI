@@ -9,6 +9,7 @@
 /* Scrolling animation */
 html {
   scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 
 /* Body  */
@@ -344,4 +345,3 @@ footer a{
 	color:#2a2460;
 	padding-left: 10%;
 }
-
