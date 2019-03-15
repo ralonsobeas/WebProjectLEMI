@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE catalogue SYSTEM "../dtd/dtd.dtd">
+
+<catalogue xsi:noNamespaceSchemaLocation="../xmlschema/schema.xsd" 
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<iva>1.21</iva>
+	<stock>
+	
+		<product id="PTS0001SMCF">
+			<name>REEBOK CROSSFIT SPEEDWICK F.E.F. GRAPHIC TEE</name>
+			<brand>Reebok</brand>
+			<price discount="0.2" currency="euro">21.95</price>
+			<year>2008</year>
+			<description>This model is 6' 0" and wears a size M. Their chest measures 42" and the waist 32".</description>
+			<season>summer</season>
+			<gender>male</gender>
+			<quantity>0</quantity>
+			<image url="https://www.reebok.co.uk/reebok-crossfit-speedwick-f.e.f.-graphic-tee/DH3702.html">../xmlimages/PTS0001SMCF.jpg</image>
+			<sport>CrossFit</sport>
+		</product>
+		
+		<product id="PTS0002SMCF">
+			<name>REEBOK CROSSFIT OPEN TEE</name>
+			<brand>Reebok</brand>
+			<price discount="0.2" currency="euro">22.95</price>
+			<year>2018</year>
+			<description>FREE PERSONALISATION. Add a name, number or more - it's on us!</description>
+			<season>summer</season>
+			<gender>male</gender>
+			<quantity>50</quantity>
+			<image url="https://www.reebok.co.uk/reebok-crossfit-open-tee/EJ9918.html">../xmlimages/PTS0002SMCF.jpg</image>
+			<sport>CrossFit</sport>
+		</product>
+		
+		<product id="PTS0003SMCF">
+			<name>Men's Sleeveless Training Top Nike Pro</name>
+			<brand>Nike</brand>
+			<price discount="0.5" currency="euro">26.95</price>
+			<year>2018</year>
+			<description>The Nike Pro Men's Sleeveless Training Top features comfortable fabric and a tight fit to help you feel confident and supported with every move.</description>
+			<season>summer</season>
+			<gender>male</gender>
+			<quantity>10</quantity>
+			<image url="https://www.nike.com/gb/t/pro-sleeveless-training-top-AKTd1BAM">../xmlimages/PTS0003SMCF.jpg</image>
+			<sport>CrossFit</sport>
+		</product>
+		
+		<product id="PTS0004SMCF">
+			<name>Men's Training T-Shirt Nike Dri-FIT</name>
+			<brand>Nike</brand>
+			<price discount="0.2" currency="euro">24.95</price>
+			<year>2019</year>
+			<description>The Nike Dri-FIT Men's Training T-Shirt delivers a soft feel, sweat-wicking performance and great range of motion to get you through your workout in total comfort.</description>
+			<season>summer</season>
+			<gender>male</gender>
+			<quantity>100</quantity>
+			<image url="https://www.nike.com/gb/t/dri-fit-training-t-shirt-J4lTnW">../xmlimages/PTS0004SMCF.jpg</image>
+			<sport>CrossFit</sport>
+		</product>
+		
+		<product id="PTS0005SMF">
+			<name>2018/19 FC BARCELONA STADIUM HOME</name>
+			<brand>Nike</brand>
+			<price discount="0.8" currency="euro">64.95</price>
+			<year>2019</year>
+			<description>Men's Football Shirt</description>
+			<season>summer</season>
+			<gender>male</gender>
+			<quantity>1000</quantity>
+			<image url="https://store.nike.com/gb/en_gb/pd/2018-19-fc-barcelona-stadium-home-football-shirt/pid-12102282/pgid-12491469">../xmlimages/PTS0005SMF.png</image>
+			<sport>Football</sport>
+		</product>
+		
+		<product id="PTS0006SWF">
+			<name>2018/19 FC BARCELONA STADIUM HOME</name>
+			<brand>Nike</brand>
+			<price discount="0.1" currency="euro">64.95</price>
+			<year>2019</year>
+			<description>Women's Football Shirt</description>
+			<season>summer</season>
+			<gender>female</gender>
+			<quantity>100</quantity>
+			<image url="https://store.nike.com/gb/en_gb/pd/2018-19-fc-barcelona-stadium-home-football-shirt/pid-12102241/pgid-12491473">../xmlimages/PTS0006SWF.png</image>
+			<sport>Football</sport>
+		</product>
+		
+		<product id="PTS0007SMF">
+			<name>2018 FFF STADIUM AWAY</name>
+			<brand>Nike</brand>
+			<price discount="0.2" currency="euro">64.95</price>
+			<year>2019</year>
+			<description>Men's Football Shirt</description>
+			<season>summer</season>
+			<gender>male</gender>
+			<quantity>1000</quantity>
+			<image url="https://store.nike.com/gb/en_gb/pd/2018-fff-stadium-away-football-shirt/pid-12626441/pgid-12717371">../xmlimages/PTS0007SMF.png</image>
+			<sport>Football</sport>
+		</product>
+		
+		<product id="PTS0008SWF">
+			<name>2018/19 ATLÉTICO DE MADRID STADIUM HOME</name>
+			<brand>Nike</brand>
+			<price discount="0.6" currency="euro">51.47</price>
+			<year>2019</year>
+			<description>Women's Football Shirt</description>
+			<season>summer</season>
+			<gender>female</gender>
+			<quantity>500</quantity>
+			<image url="https://store.nike.com/gb/en_gb/pd/2018-19-atletico-de-madrid-stadium-home-football-shirt/pid-12171927/pgid-12782905">../xmlimages/PTS0008SWF.png</image>
+			<sport>Football</sport>
+		</product>
+		
+		<product id="PTS0009WWCF">
+			<name>Women's Long-Sleeve Training Top Nike Dri-FIT</name>
+			<brand>Nike</brand>
+			<price discount="0.2" currency="euro">44.95</price>
+			<year>2005</year>
+			<description>The Nike Dri-FIT Top has you covered when you're warming up, cooling down or just not ready to go full steam. Soft, cosy fleece keeps in warmth and has slits on the back shoulders for a little ventilation. The shorter length falls near the top of your hips for easy layering.</description>
+			<season>winter</season>
+			<gender>female</gender>
+			<quantity>500</quantity>
+			<image url="https://www.nike.com/gb/t/dri-fit-long-sleeve-training-top-hPmWNB/AQ0199-850">../xmlimages/PTS0009WWCF.jpg</image>
+			<sport>CrossFit</sport>
+		</product>
+		
+		<product id="PTS0010SWCF">
+			<name>Women's Short-Sleeve Running Top Nike Tailwind</name>
+			<brand>Nike</brand>
+			<price discount="0" currency="euro">34.95</price>
+			<year>2009</year>
+			<description>The Nike Tailwind Top sets you up in soft, lightweight fabric with mesh panels to help cool your run. It takes design cues from vintage varsity jackets and motocross, which collide to create a nostalgic yet modern aesthetic.</description>
+			<season>summer</season>
+			<gender>female</gender>
+			<quantity>35</quantity>
+			<image url="https://www.nike.com/gb/t/tailwind-short-sleeve-running-top-f6RnWv">../xmlimages/PTS0010SWCF.jpg</image>
+			<sport>CrossFit</sport>
+		</product>
+		
+		<product id="PTS0011SWCF">
+			<name>WOR ACTIVCHILL TANK TOP</name>
+			<brand>Reebok</brand>
+			<price discount="0" currency="euro">19.95</price>
+			<year>2017</year>
+			<description>This model is 5' 8" and wears a size S. Their chest measures 34" and the waist 25".</description>
+			<season>summer</season>
+			<gender>female</gender>
+			<quantity>15</quantity>
+			<image url="https://www.reebok.co.uk/wor-activchill-tank-top/DU4861.html">../xmlimages/PTS0011SWCF.jpg</image>
+			<sport>CrossFit</sport>
+		</product>
+		
+		<product id="PTS0012SWCF">
+			<name>LES MILLS® TANK TOP</name>
+			<brand>Reebok</brand>
+			<price discount="0" currency="euro">32.95</price>
+			<year>2018</year>
+			<description>This model is 5' 9" and wears a size S. Their chest measures 34" and the waist 25".</description>
+			<season>summer</season>
+			<gender>female</gender>
+			<quantity>3</quantity>
+			<image url="https://www.reebok.co.uk/les-mills%C2%AE-tank-top/DV2706.html">../xmlimages/PTS0012SWCF.jpg</image>
+			<sport>CrossFit</sport>
+		</product>
+		
+		<product id="PTS0013WMAS">
+			<name>THERMOWARM LS THERMAL TEE</name>
+			<brand>Reebok</brand>
+			<price discount="0.3" currency="euro">44.95</price>
+			<year>2019</year>
+			<description>This model is 5' 10" and wears a size M. Their chest measures 38" and the waist 29".</description>
+			<season>winter</season>
+			<gender>male</gender>
+			<quantity>90</quantity>
+			<image url="https://www.reebok.co.uk/thermowarm-ls-thermal-tee/CY4909.html">../xmlimages/PTS0013WMCF.jpg</image>
+			<sport>All sports</sport>
+		</product>
+		
+		<product id="PT0014WWAS">
+			<name>CLASSICS FRENCH TERRY PANTS</name>
+			<brand>Reebok</brand>
+			<price discount="0" currency="euro">29.95</price>
+			<year>2018</year>
+			<description>This model is 5' 11" and wears a size S. Their chest measures 34" and the waist 26".</description>
+			<season>winter</season>
+			<gender>female</gender>
+			<quantity>550</quantity>
+			<image url="https://www.reebok.co.uk/classics-french-terry-pants/DT7246.html">../xmlimages/PT0014WWAS.jpg</image>
+			<sport>All sports</sport>
+		</product>
+		
+		<product id="PT0015WWAS">
+			<name>WOR BIG DELTA TIGHTS</name>
+			<brand>Reebok</brand>
+			<price discount="0.5" currency="euro">29.95</price>
+			<year>2018</year>
+			<description>This model is 5' 9" and wears a size S. Their chest measures 33" and the waist 26".</description>
+			<season>winter</season>
+			<gender>female</gender>
+			<quantity>550</quantity>
+			<image url="https://www.reebok.co.uk/wor-big-delta-tights/DU4725.html">../xmlimages/PT0015WWAS.jpg</image>
+			<sport>All sports</sport>
+		</product>
+		
+		<product id="PT0016SMAS">
+			<name>WOR TRACKSTER PANTS</name>
+			<brand>Reebok</brand>
+			<price discount="0" currency="euro">34.95</price>
+			<year>2005</year>
+			<description>This model is 6' 2" and wears a size M. Their chest measures 40" and the waist 32".</description>
+			<season>summer</season>
+			<gender>male</gender>
+			<quantity>1550</quantity>
+			<image url="https://www.reebok.co.uk/wor-trackster-pants/DW7394.html">../xmlimages/PT0016SMAS.jpg</image>
+			<sport>All sports</sport>
+		</product>
+		
+		<product id="PT0017WMAS">
+			<name>TRAINING ESSENTIALS WOVEN PANTS</name>
+			<brand>Reebok</brand>
+			<price discount="0" currency="euro">27.95</price>
+			<year>2015</year>
+			<description>This model is 6' 1" and wears a size M. Their chest measures 41" and the waist 32".</description>
+			<season>winter</season>
+			<gender>male</gender>
+			<quantity>10</quantity>
+			<image url="https://www.reebok.co.uk/training-essentials-woven-pants/D94213.html">../xmlimages/PT0017WMAS.jpg</image>
+			<sport>All sports</sport>
+		</product>
+		
+		<product id="PT0018WWAS">
+			<name>Women's Printed Tights Nike One</name>
+			<brand>Nike</brand>
+			<price discount="0" currency="euro">37.95</price>
+			<year>2018</year>
+			<description>Ideal support for your workout and beyond, the Nike One Tights hug your body for a supportive feel that flatters your shape. The mid-rise waistband provides a natural feel and added coverage as you move, while the subtle zebra print gives you an exotic look.</description>
+			<season>winter</season>
+			<gender>female</gender>
+			<quantity>130</quantity>
+			<image url="https://www.nike.com/gb/t/one-printed-tights-jfFmpz">../xmlimages/PT0018WWAS.jpg</image>
+			<sport>All sports</sport>
+		</product>
+		
+		<product id="PT0019SMAS">
+			<name>Men's Track Trousers Nike Sportswear NSW</name>
+			<brand>Nike</brand>
+			<price currency="euro">74.95</price>
+			<year>2001</year>
+			<description>The Nike Sportswear NSW Tracksuit Bottoms pair a classic look inspired by football warm-ups with a unique, street-ready palm print. Logo tape extends from hips to hems, and zip cuffs allow for easy on and off.</description>
+			<season>summer</season>
+			<gender>male</gender>
+			<quantity>230</quantity>
+			<image url="https://www.nike.com/gb/t/sportswear-nsw-tracksuit-bottoms-KF2GCW">../xmlimages/PT0019SMAS.jpg</image>
+			<sport>All sports</sport>
+		</product>
+		
+	</stock>
+</catalogue>

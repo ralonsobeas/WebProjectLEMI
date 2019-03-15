@@ -1,0 +1,28 @@
+<!--Root element-->
+<!ELEMENT catalogue (iva,stock)>
+
+<!--Inside catalogue -->
+<!ELEMENT iva (#PCDATA)>
+<!ELEMENT stock (product+)>
+
+<!--Inside stock  -->
+<!ELEMENT product (name,brand,price,year,description,season,gender,quantity,image,sport)>
+
+<!--Inside product  -->
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT brand (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT description (#PCDATA)> 
+<!ELEMENT season (#PCDATA)>
+<!ELEMENT gender (#PCDATA)>
+<!ELEMENT quantity (#PCDATA)>
+<!ELEMENT image (#PCDATA)> 
+<!ELEMENT sport (#PCDATA)>
+
+<!--Attributes  -->
+<!ATTLIST product id CDATA #REQUIRED>
+<!ATTLIST price currency CDATA #IMPLIED>
+<!ATTLIST price discount CDATA #IMPLIED>
+<!ATTLIST image url CDATA #REQUIRED>
+

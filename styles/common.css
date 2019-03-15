@@ -209,7 +209,7 @@ nav{
 	background:none;
 	border-radius: 25px;
 	position: fixed;
-	width: 40%;
+	width: 70%;
 	top:15%;
 }
 
@@ -240,7 +240,7 @@ nav{
 	background: linear-gradient(to right, #2a2460 0%, #aa4690 100%);
 	border-radius: 25px;
 	position:fixed;
-	width: 40%;
+	width: 100%;
 	top:15%;
 }
 
@@ -256,7 +256,7 @@ nav{
 .menu li:hover .submenuproducts{
 	display:block;
 	background-color:#aa3690;
-	width:40%;
+	width:20%;
 	transition: 0.7s all;
 }
 

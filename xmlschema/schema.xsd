@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<!--Root element  -->
+<xs:element name="catalogue">
+  <xs:complexType>
+	<xs:sequence>
+		<!--IVA and Stock  -->
+		<xs:element name="iva" type="xs:decimal" maxOccurs="1"/>
+		<xs:element name="stock" type="stocktype" minOccurs="1" maxOccurs="1"/>
+	</xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<!--Stock  -->
+<xs:complexType name="stocktype">
+	<xs:sequence>
+		<xs:element name="product" type="producttype" minOccurs="1" maxOccurs="unbounded"/>
+	</xs:sequence>
+</xs:complexType>
+
+<!--Product -->
+<xs:complexType name="producttype">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string"/>
+      <xs:element name="brand" type="xs:string"/>
+      <xs:element name="price" type="pricetype"/>
+	  <xs:element name="year" type="yeartype" />
+      <xs:element name="description" type="xs:string"/>
+	  <xs:element name="season" type="xs:string"/>
+      <xs:element name="gender" type="gendertype"/>
+	  <xs:element name="quantity" type="quantitytype"/>
+      <xs:element name="image" type="imagetype"/>
+	  <xs:element name="sport" type="xs:string"/>
+    </xs:sequence>
+	<xs:attribute name="id" type="xs:ID" use="required"/>
+</xs:complexType>
+
+<!--Price  -->
+<xs:complexType name="pricetype">
+  <xs:simpleContent>
+    <xs:extension base="xs:decimal">
+      <xs:attribute name="discount" type="xs:decimal" use="optional"/>
+	  <xs:attribute name="currency" type="xs:string" use="required"/>
+    </xs:extension>
+  </xs:simpleContent>
+</xs:complexType>
+
+<!--Year  -->
+<xs:simpleType name="yeartype">
+    <xs:restriction base="xs:integer">
+      <xs:pattern value="[0-9]{4}"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<!--Gender  -->
+<xs:simpleType name="gendertype">
+  <xs:restriction base="xs:string">
+      <xs:enumeration value="male"/>
+      <xs:enumeration value="female"/>
+   </xs:restriction>
+</xs:simpleType>
+
+<!--Quantity  -->
+<xs:simpleType name="quantitytype">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="0"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<!--Image  -->
+<xs:complexType name="imagetype">
+  <xs:simpleContent>
+    <xs:extension base="xs:string">
+      <xs:attribute name="url" type="xs:string" use="required" />
+    </xs:extension>
+  </xs:simpleContent>
+</xs:complexType>
+
+
+
+</xs:schema>

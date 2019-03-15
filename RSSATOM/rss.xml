@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="transformacionRSS.xsl"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+	<title>RSS about sportswear JustFit</title>
+	<link>http://index.html</link>
+	<description>
+	  All news related to the company JustFit
+	</description>
+	<language>en-EN</language>
+	<ttl>60</ttl>
+	<atom:link href="http://index.html" rel="self" type="rss.xml"/>
+	<skipDays>
+		<day>Saturday</day>
+		<day>Sunday</day>
+	</skipDays>
+	<skipHours>
+		<hour>20</hour>
+		<hour>21</hour>
+		<hour>22</hour>
+		<hour>23</hour>
+	</skipHours>
+	<image>
+		<title>RSS about sportswear JustFit</title>
+		<link>http://index.html</link>
+		<url>http://imagemain.jpg</url>
+	</image>
+	<pubDate>Mon, 25 Feb 2019 10:48:09 +0100</pubDate>
+	<webMaster>ralonsobeas@gmail.com (Rodrigo Alonso)</webMaster>
+	<item>
+		<title><![CDATA[ Adidas launches three new trainers made from recycled ocean plastic ]]></title>
+		<author>ralonsobeas@gmail.com (Rodrigo Alonso)</author>
+		<category>Adidas</category>
+		<guid>
+			https://www.independent.co.uk/life-style/fashion/adidas-ultraboost-x-parley-ocean-pollution-trainers-plastic-a7701486.html
+		</guid>
+		<link>https://www.independent.co.uk/life-style/fashion/adidas-ultraboost-x-parley-ocean-pollution-trainers-plastic-a7701486.html</link>
+		<pubDate>Mon, 25 Feb 2019 10:48:09 +0100</pubDate>
+		<description>
+			The brand is turning pollution into high-performance products
+		</description>
+	</item>
+	<item>
+		<title><![CDATA[ JD Sports Fashion scores as Sports Direct stumbles ]]></title>
+		<author>ralonsobeas@gmail.com (Rodrigo Alonso)</author>
+		<category>JD</category>
+		<guid>
+			https://www.independent.co.uk/news/business/comment/jd-sports-fashion-scores-as-sports-direct-stumbles-a7241036.html
+		</guid>
+		<link>https://www.independent.co.uk/news/business/comment/jd-sports-fashion-scores-as-sports-direct-stumbles-a7241036.html</link>
+		<pubDate>Wed, 20 Feb 2019 15:41:15 +0100</pubDate>
+		<description>
+			Peter Cowgill's chain has wowed the City with its latest results while his rival is down in the dumps
+		</description>
+	</item>
+	<item>
+		<title><![CDATA[ Puma sales soar as it taps into market for women's sportswear ]]></title>
+		<author>ralonsobeas@gmail.com (Rodrigo Alonso)</author>
+		<category>Puma</category>
+		<guid>
+			https://www.independent.co.uk/news/business/news/puma-sales-soar-as-it-taps-into-market-for-women-s-sportswear-a6882891.html
+		</guid>
+		<link>https://www.independent.co.uk/news/business/news/puma-sales-soar-as-it-taps-into-market-for-women-s-sportswear-a6882891.html</link>
+		<pubDate>Tue, 12 Feb 2019 18:32:02 +0100</pubDate>
+		<description>
+			The brand has been losing ground to competitors Nike and Adidas, but thinks it can win in the women's market
+		</description>
+	</item>
+  </channel>
+</rss>

@@ -53,6 +53,10 @@ section table a:hover{
 
 }
 
+.description{
+	font-size: 3vh;
+}
+
 /* T-shirt and trousers hover for men.html and women.html */
 #tshirt img:hover{
 	opacity: 0.2;
